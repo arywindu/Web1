@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NGapload</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+    
+</head>
+    
+    <style>
+        .mySlides {display:none;}
+    </style>
+    
+<style>
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #262626;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: lightgray;
+}
+    
+}
+    .mantan{
+        width: 500px;
+        height: 500px;
+        background-color: ;
+        float: right;
+    }
+    .gebetan{
+        width: 500px;
+        height: 100px;
+        background-color: ;
+        float: left;
+        margin-left: 110px;
+    }
+    .gebetanyangtertikung{
+         width: 100%;
+        height: 100px;
+        background-color: dimgrey;
+    '   float: left;
+    '    margin-left: 110px
+    }
+   
+    }    
+    
+</style>
+    
+<body>
+    
+  <header class="container">
+    <div class="row">
+      <h1 style="color:#33aaff" class="col-sm-4">Ngapload.com</h1>
+      <nav class="col-sm-8 text-right">
+     
+          <div class="dropdown">
+              <button class="dropbtn">Gallery</button>
+           </div>
+          
+                <div class="dropdown">
+  <button class="dropbtn">Gallery</button>
+  <div class="dropdown-content">
+    <a href="#"><span class="glyphicon glyphicon-search"></span>   Photo</a>
+    <a href="#"><span class="glyphicon glyphicon-search"></span>   Music</a>
+    <a href="#"><span class="glyphicon glyphicon-search"></span>   Video</a>
+  </div>
+</div>
+   <div class="dropdown">
+              <button class="dropbtn">Contact</button>
+           </div>
+      </nav>
+    </div>
+  </header>
+ <div class="w3-content w3-section" >
+  <img class="mySlides" src="image/Chrysanthemum.jpg" width="100%" height="400">
+  <img class="mySlides" src="image/Desert.jpg" width="100%" height="400">
+  <img class="mySlides" src="image/Hydrangeas.jpg" width="100%" height="400">
+  <img class="mySlides" src="image/Jellyfish.jpg" width="100%" height="400">
+  <img class="mySlides" src="image/Koala.jpg" width="100%" height="400">
+  <img class="mySlides" src="image/Lighthouse.jpg" width="100%" height="400">
+</div>
+    
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+    
+    <div class="container">
+      <div class="row text-center">
+       </div>
+    </div>
+  </section>
+    <h1><center>Our Programs</center></h1>
+    <h4><center>WHY CHOOSE US ?</center></h4>
+    <br><br>
+  <section class="container">
+    <div class="row">
+      <figure class="col-sm-6">
+        <p>Photography</p>
+        <img src="image/Jellyfish.jpg"/>
+    	</figure>
+    	<figure class="col-sm-6">
+        <p>Film</p>
+        <img src="image/Desert.jpg"/>
+    	</figure>
+  	</div>
+    <div class="row">
+      <figure class="col-sm-6">
+        <p>Music</p>
+        <img src="image/Lighthouse.jpg"/>
+      </figure>
+      <figure class="col-sm-6">
+        <p>Web Design</p>
+        <img src="image/Hydrangeas.jpg">
+      </figure>
+    </div>
+</section>
+     <div class="gebetanyangtertikung">
+	<footer class="container">
+  	<div class="row">
+      <p style="color:white"class="col-sm-4">&copy;2016 Ngapload.com </p>
+      <ul class="col-sm-8">
+        <li class="col-sm-1">
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"/>
+        </li>
+        <li class="col-sm-1">
+       <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"/></li>
+        <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"/></li>
+        </ul>
+    </div>
+  </footer>
+</body>
+</html>
