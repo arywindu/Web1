@@ -70,7 +70,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: skyblue;
+    background-color: lightgray;
 }
     .mantan{
         width: 500px;
@@ -108,7 +108,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <div class="mantanyangkembalicantik">
     <header class="container">
     <div class="row">
-        <a href="index.html"><h1 class="col-sm-4">Ngapload.com</h1></a>
+        <h1 class="col-sm-4">Ngapload.com</h1>
       <nav class="col-sm-8 text-right">
      
           <div class="dropdown">
@@ -171,33 +171,35 @@ function carousel() {
                 </address>
     </div>
     <div class = "mantan">
-    <fieldset>
-                    <input type="hidden" name="csrfmiddlewaretoken" value="xbSysjjM6wQcxSWoCItN0QFtx29lAGev">
-	                
-	                
-	                    
-	                    <p><input id="id_batman" name="batman" type="hidden"></p>
-	                
-	                    
-	                    <p><input class="required" id="id_name" maxlength="255" name="name" placeholder="Nama" type="text"></p>
-	                
-	                    
-	                    <p><input class="required" id="id_phone" maxlength="255" name="phone" placeholder="Phone" type="text"></p>
-	                
-	                    
-	                    <p><input class="required" id="id_email" maxlength="255" name="email" placeholder="Email" type="text"></p>
-	                
-	                    
-	                    <p><input id="id_subject" maxlength="255" name="subject" placeholder="Subject" type="text"></p>
-	                
-	                    
-	                    <p><textarea cols="40" id="id_message" name="message" placeholder="Pesan yang ingin disampaikan kepada kami" rows="10"></textarea></p>
-	                
-                <p>
-                  <input type="submit" value="Kirim" name="kirim" class="submit">&nbsp;&nbsp;&nbsp;&nbsp;<span id="result"></span>
-                </p>
-                <div class="clearfix"></div>
-              </fieldset>
+    
+        <form style="padding:5px">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputname">Name</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nama">
+  </div>
+  <div>          
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+</label>
+</div><br>
+  <div class="form-group">
+    <label for="exampleInputphone">Phone</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Phone">
+  </div>
+     <div class="form-group">
+   <textarea class="form-control" rows="3"></textarea>       
+  <br>
+  <button type="submit" class="btn btn-success">Submit</button>
+  <button type="reset" class="btn btn-warning">Reset</button>         
+</form>
+        
         </div>
     <br><br>
   <section class="container">

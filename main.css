@@ -78,3 +78,12 @@ footer li img {
   width: 32px;
   height: 32px;
 }
+
+.imgg img {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */}
+
+.imgg img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
