@@ -7,6 +7,19 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
     
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+    
 </head>
     
     <style>
@@ -59,8 +72,6 @@
 .dropdown:hover .dropbtn {
     background-color: lightgray;
 }
-    
-}
     .mantan{
         width: 500px;
         height: 500px;
@@ -77,20 +88,27 @@
     .gebetanyangtertikung{
          width: 100%;
         height: 100px;
-        background-color: dimgrey;
+        background-color:dimgrey;
     '   float: left;
     '    margin-left: 110px
     }
-   
-    }    
-    
+    .mantanyangkembalicantik{
+         width: 100%;
+        height: 490px;
+        background-color:;
+        
+    '   float: left;
+    '    margin-left: 110px
+    }
 </style>
     
-<body>
     
-  <header class="container">
+    
+<body>
+  <div class="mantanyangkembalicantik">
+    <header class="container">
     <div class="row">
-        <h1 style="color:#33aaff font-family:;" class="col-sm-4">Ngapload.com</h1>
+        <h1 class="col-sm-4">Ngapload.com</h1>
       <nav class="col-sm-8 text-right">
      
           <div class="dropdown">
@@ -106,7 +124,7 @@
   </div>
 </div>
    <div class="dropdown">
-       <a href="kontak.html"><button class="dropbtn">Contact</button></a>
+              <button class="dropbtn">Contact</button>
            </div>
       </nav>
     </div>
@@ -119,7 +137,7 @@
   <img class="mySlides" src="image/Koala.jpg" width="100%" height="400">
   <img class="mySlides" src="image/Lighthouse.jpg" width="100%" height="400">
 </div>
-    
+    </div>
     <script>
 var myIndex = 0;
 carousel();
@@ -142,35 +160,56 @@ function carousel() {
        </div>
     </div>
   </section>
-    <h1><center>Our Programs</center></h1>
-    <h4><center>WHY CHOOSE US ?</center></h4>
+    <h1><center>CONTACT US</center></h1>
+    <h4><center>c'mon contact us</center></h4>
+    <div class = "gebetan">
+    <address>
+                    Ngapload.com<br>
+                    Bukit Golf Cibubur, Riverside 1 Blok A7/26<br>
+                    Gunung Putri, 16963
+                    (dekat pintu Cimanggis via Tol Jagorawi)
+                </address>
+    </div>
+    <div class = "mantan">
+    
+        <form style="padding:5px">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputname">Name</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nama">
+  </div>
+  <div>          
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+</label>
+</div><br>
+  <div class="form-group">
+    <label for="exampleInputphone">Phone</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Phone">
+  </div>
+     <div class="form-group">
+   <textarea class="form-control" rows="3"></textarea>       
+  <br>
+  <button type="submit" class="btn btn-success">Submit</button>
+  <button type="reset" class="btn btn-warning">Reset</button>         
+</form>
+        
+        </div>
     <br><br>
   <section class="container">
-    <div class="row">
-      <figure class="col-sm-6">
-        <p>Photography</p>
-        <img src="image/Jellyfish.jpg"/>
-    	</figure>
-    	<figure class="col-sm-6">
-        <p>Film</p>
-        <img src="image/Desert.jpg"/>
-    	</figure>
-  	</div>
-    <div class="row">
-      <figure class="col-sm-6">
-        <p>Music</p>
-        <img src="image/Lighthouse.jpg"/>
-      </figure>
-      <figure class="col-sm-6">
-        <p>Web Design</p>
-        <img src="image/Hydrangeas.jpg">
-      </figure>
-    </div>
+    <div id="googleMap" style="width:500px;height:380px;"></div>
+    
 </section>
-     <div class="gebetanyangtertikung">
+    <div class="gebetanyangtertikung">
 	<footer class="container">
   	<div class="row">
-      <p style="color:white"class="col-sm-4">&copy;2016 Ngapload.com </p>
+      <p style="color:white" class="col-sm-4">&copy; 2016 Ngapload.com </p>
       <ul class="col-sm-8">
         <li class="col-sm-1">
         <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"/>
@@ -181,5 +220,6 @@ function carousel() {
         </ul>
     </div>
   </footer>
+    </div>
 </body>
 </html>
